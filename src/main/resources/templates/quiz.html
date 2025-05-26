@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>クイズ</title>
+</head>
+<body>
+    <h1>クイズアプリ</h1>
+    <p>問題: <strong th:text="${quiz.question}"></strong></p>
+
+    <form method="post" action="/check">
+        <input type="text" name="answer" placeholder="答えを入力">
+        <input type="hidden" name="correctAnswer" th:value="${quiz.answer}">
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>

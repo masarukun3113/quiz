@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: quiz-app
+    name: quiz
     runtime: docker
     repo: https://github.com/masarukun3113/quiz.git
     branch: main

@@ -10,10 +10,10 @@ import java.util.Random;
 public class QuizService {
 
     private final List<Quiz> quizzes = Arrays.asList(
-        new Quiz("日本の首都は？", "東京"),
-        new Quiz("3 + 4 は？", "7"),
-        new Quiz("水は英語で？", "water"),
-        new Quiz("円周率は？（小数第1位まで）", "3.1")
+        new Quiz("PGの主要事業は決済代行事業、金融関連事業ともう一つは何?", "決済活性化事業"),
+        new Quiz("株式指標の内、〇〇〇=1は企業の解散価値と等しいと言われる(ローマ字３文字)", "PBR"),
+        new Quiz("TAMの向上のためには新規事業とM&Aともう一つは何?(漢字で)", "業務提携"),
+        new Quiz("売上高から原価を引いたものは漢字4文字で何という?", "売上総利益")
     );
 
     public Quiz getRandomQuiz() {
